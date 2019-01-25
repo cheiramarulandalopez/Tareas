@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Ingrese y: ");
+            double y = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese z: ");
+            double z = double.Parse(Console.ReadLine());
+            double t = Math.Sqrt((y * y) + (z * z));
+            Console.WriteLine("el valor y es " + y);
+            Console.WriteLine("el valor z es " + z);
+            Console.WriteLine("el valor encontrado t es " + t);
+            double a = Math.Asin(y / t)*180/ Math.PI ;
+            double c = Math.Asin(z / t) * 180 / Math.PI;
+            Console.WriteLine("el valor encontrado a es " + a);
+            Console.WriteLine("el valor encontrado c es " + c);
+        }
+    }
+}
