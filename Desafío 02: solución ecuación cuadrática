@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Ingrese a:");
+            double a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese b:");
+            double b = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese c:");
+            double c = double.Parse(Console.ReadLine());
+            double x = (b * b) - 4 * a * c;
+            double q = 0;
+            if (a != 0)
+            {
+                if (x < 0)
+                {
+                    Console.WriteLine("no es posible calcular la solución");
+                }
+                if (x == 0)
+                {
+                    q= -b / (2 * a);
+                    Console.WriteLine("El unico valor de x = " + q);
+                }
+                else
+                {
+                    double x1 = (-b + Math.Sqrt(x)) / (2 * a);
+                    double x2 = (-b - Math.Sqrt(x)) / (2 * a);
+                    Console.WriteLine("El valor de x1 = " + x1 + "El valor de x2 = " + x2);
+                }
+            }
+        }
+    }
+}
