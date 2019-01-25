@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Ingrese c: ");
+            double c = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese z: ");
+            double z = double.Parse(Console.ReadLine());
+            double a = 90 - c;
+
+            double y = (Math.Sin(a * Math.PI / 180) * z)/ Math.Sin(c * Math.PI / 180);
+            double t = (Math.Sin(90 * Math.PI / 180) * z)/ Math.Sin(c * Math.PI / 180);
+
+            Console.WriteLine("el valor t es " + t);
+            Console.WriteLine("el valor a es " + a);
+            Console.WriteLine("el valor c encontrado es " + c);
+            Console.WriteLine("el valor y encontrado es " + y);
+            Console.WriteLine("el valor z encontrado es " + z);
+        }
+    }
+}
