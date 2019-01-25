@@ -1,0 +1,25 @@
+namespace ConsoleApp7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Ingrese su salario:");
+            double s = double.Parse(Console.ReadLine());
+            double m = 828116;
+            if (s < (2 * m))
+            {
+                Console.WriteLine("Su tarifa es la A y su cuota moderadora es 3200 pesos");
+            }
+            if ((s == (2 * m) || s > (2 * m)) && s < (5 * m))
+            {
+                Console.WriteLine("Su tarifa es la B y su cuota moderadora es 12700 pesos");
+            }
+            if ((s == (5 * m) || s > (5 * m)))
+            {
+                Console.WriteLine("Su tarifa es la C y su cuota moderadora es 33500 pesos");
+            }
+
+        }
+    }
+}
