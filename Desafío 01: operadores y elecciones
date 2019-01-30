@@ -1,0 +1,52 @@
+namespace ConsoleApp8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Ingrese votos por el partido 1");
+            int p1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese votos por el partido 2");
+            int p2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese votos en blanco");
+            int blancos = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese votos anulados");
+            int anulados = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el número total de personas");
+            int n = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el porcentaje de la población que es mayor de 18 años");
+            double p = double.Parse(Console.ReadLine());
+            int t = p1 + p2 + blancos + anulados;
+            double o = t * 0.1;
+            double v = n * p;
+            bool condicion1=t>n;
+            bool condicion2 = Math.Abs(p1 - p2) < o;
+            bool condicion3 = v < (n * 0.3);
+            if ((condicion1 || condicion2)&& condicion3)
+                {
+                Console.WriteLine("las elecciones deben ser ejecutadas nuevamente");
+                }
+            else
+            {
+                if (p1 > p2)
+                {
+                    
+                        Console.WriteLine("el ganador es el partido1");
+                    
+                }
+                if (p1 < p2)
+                {
+
+                    Console.WriteLine("el ganador es el partido2");
+
+                }
+                else
+                {
+                    Console.WriteLine("los votos del partido1 y el partido dos, son iguales");
+                }
+            }
+
+        }
+        
+    }
+}
