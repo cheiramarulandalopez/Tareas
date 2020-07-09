@@ -1,0 +1,838 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Copia de 0. Usando Google Colaboratory.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/cheiramarulandalopez/Tareas/blob/master/Actividad%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YZ2EnAwqLPBG",
+        "colab_type": "text"
+      },
+      "source": [
+        "<h1>Usando Google Colaboratory</h1>\n",
+        "<h2>Realizado por: John Fernando Vargas</h2>\n",
+        "<h2>Curso de Procesos Estocásticos</h2>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "A_DfRo6dLsXT",
+        "colab_type": "text"
+      },
+      "source": [
+        "**Propósito de la actividad**\n",
+        "\n",
+        "Reconocer Python como una herramienta importante para el desarrollo de actividades del curso.\n",
+        "\n",
+        "Valorar Python por su facilidad de acceso (software libre), flexibilidad y facilidad de uso.\n",
+        "\n",
+        "Reconocer a Google Colaboratory como una interface para el desarrollo de proyectos en el lenguaje de programación Python.\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "NolSiPe37hg4",
+        "colab_type": "text"
+      },
+      "source": [
+        "<h1>Actividad</h1>\n",
+        "<h2>Antes de ejecutar las celdas y realizar las actividades guarde una copia de este notebook en su Drive (File/Save a copy in drive)</h2>\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "yV2t4jt86fJA",
+        "colab_type": "text"
+      },
+      "source": [
+        "Almacene en la variable “x” el valor 10 y muestre(print) el resultado\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "1mydXls66i1j",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "07b52e44-0137-48f9-bde9-f0492f912035"
+      },
+      "source": [
+        "x=10 #Se asigna el valor 10 a x\n",
+        "print(x) # Sepresenta el vaor de x\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "10\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "asD2_hbFHwp1",
+        "colab_type": "text"
+      },
+      "source": [
+        "Almacene en la variable “y” el valor 20 y muestre el resultado"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "E27Gs1Kz6fnU",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "1d658def-bf67-4e14-aed1-cfba80f2c6b9"
+      },
+      "source": [
+        "y=20\n",
+        "print(y)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "20\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "sCv9aVw86ibB",
+        "colab_type": "text"
+      },
+      "source": [
+        "Sume “x” y “y”, almacene el resultado en la variable “z” y muestre el resultado"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "IsgRIISOH1b1",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "bc571919-9e7f-44b2-e6bb-89439cc2b275"
+      },
+      "source": [
+        "z= x+y\n",
+        "print(z)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "30\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "O5unD_oOH4HE"
+      },
+      "source": [
+        "Reste “x” de “y, almacene el resultado en la variable “z” y muestre el resultado"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "Lv71Mu-EH4HJ",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "fd94fc13-309c-49da-be76-e5a807ef2cfa"
+      },
+      "source": [
+        "z= y-x\n",
+        "print(z)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "10\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "UTNWUQNqIBJE"
+      },
+      "source": [
+        "Multiplique “x” y “y, almacene el resultado en la variable “z” y muestre el resultado"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "NVw5dkHuIBJI",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "cb1229ae-a092-403e-9e49-52536597424b"
+      },
+      "source": [
+        "z=x*y\n",
+        "print(z)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "200\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "eeNBtn36IBJU"
+      },
+      "source": [
+        "Divida “x” por “y”, almacene el resultado en la variable “z” y muestre el resultado"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "DYRvdLLiIBJW",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "16f32f54-2627-427f-b9a6-f0d25ab4085b"
+      },
+      "source": [
+        "z=x/y\n",
+        "print(z)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "0.5\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "2J1JNxlCIEAj"
+      },
+      "source": [
+        "Eleve la variable “x” al cuadrado, almacene el resultado en la variable “z” y muestre el resultado"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "JE3IkmGvIEAm",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "b0d700fd-37aa-4401-9a3f-cd919a8442ff"
+      },
+      "source": [
+        "z=x**2\n",
+        "print(z)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "100\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "99SOjVDRIEAy"
+      },
+      "source": [
+        "Importe la librería Math para que tenga acceso a muchas funciones matemáticas https://docs.python.org/3/library/math.html"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "cx_qtT8JIEA0",
+        "colab": {}
+      },
+      "source": [
+        "import math"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "EQURG6rkIEqg"
+      },
+      "source": [
+        "Calcule la raíz cuadrada de “x” y muestre el resultado"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "Gw9YuWTAIEqi",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "ba78cb58-cb37-4247-cab7-5d457c725d96"
+      },
+      "source": [
+        "raiz=math.sqrt(x)\n",
+        "print(raiz)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "3.1622776601683795\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "AQ7Aaxt_IEqm"
+      },
+      "source": [
+        "Calcule factorial de “y” y muestre el resultado"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "7nqPodvXIEqn",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "2c9e57a1-e7b5-4f43-f65a-75bee5e8def5"
+      },
+      "source": [
+        "fac= math.factorial(y)\n",
+        "print(fac)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "2432902008176640000\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "9PquQ2AYIFM-"
+      },
+      "source": [
+        "Calcule el logaritmo natural de “x” y muestre el resultado"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "f6jh-WBfIFNB",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "44727d27-488b-4e61-8c72-da58846987f1"
+      },
+      "source": [
+        "logaritmo=math.log(x)\n",
+        "print(logaritmo)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "2.302585092994046\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "cbEKgEXWIFNM"
+      },
+      "source": [
+        "Calcule el logaritmo en base 10 de “x” muestre el resultado"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "XDzsXUnEIFNO",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "fff41427-4c21-4f79-f35d-74ba13149972"
+      },
+      "source": [
+        "logaritmo10=math.log10(x)\n",
+        "print(logaritmo10)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "1.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "kVdbN7phIFqe"
+      },
+      "source": [
+        "Calcule el coseno de “x” y muestre el resultado"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "31mCiPa4IFqh",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "0c600761-26bc-4f40-b74e-32acdad9fa61"
+      },
+      "source": [
+        "coseno=math.cos(x)\n",
+        "print(coseno)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "-0.8390715290764524\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "jYa3FjU7IFqs"
+      },
+      "source": [
+        "Calcule el área de un círculo de radio “x”"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "v-x3uvxlIFqu",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "dc9ebd5a-fd8f-4577-8a9a-1bee4ec5972d"
+      },
+      "source": [
+        "area= (math.pi)*(x**2)\n",
+        "print(area)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "314.1592653589793\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "aJ7r6DTzIGFd"
+      },
+      "source": [
+        "*La* librería numpy permite hacer operaciones con vectores y matrices, importe la libreía numpy con el alias np"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "tEnQM1AdIGFg",
+        "colab": {}
+      },
+      "source": [
+        "import numpy as np\n"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "URV-J34oIGFr"
+      },
+      "source": [
+        "Construya un vector a = [1,2,3]"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "8FzGxxKjIGFt",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "75449d39-579a-4529-a7ce-e3c1cc4279a3"
+      },
+      "source": [
+        "import numpy as np\n",
+        "a=np.array([1,2,3])\n",
+        "print(a)"
+      ],
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[1 2 3]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "HQqZvYZDIGiJ"
+      },
+      "source": [
+        "Construya un vector b = [4,5,6]"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "TXSHg0QTIGiK",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "f5086c2a-24e7-4de5-cec2-d44fca2ec337"
+      },
+      "source": [
+        "lista2 = [4,5,6]\n",
+        "b= np.array(lista2)\n",
+        "print (b)"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[4 5 6]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "mbQI6a_qIGiQ"
+      },
+      "source": [
+        "Sume los vectores “a” y “b” guarde el resultado en “c” y muestre el resultado"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "rOvlGX3GIGiQ",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "557787cc-1c9c-4e4e-89fb-7b947e2051f8"
+      },
+      "source": [
+        "c=a+b\n",
+        "print(c)"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[5 7 9]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "BDREU_pLIG_O"
+      },
+      "source": [
+        "Reste los vectores “a” y “b” guarde el resultado en “c” y muestre el resultado"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "qE8R2qukIG_R",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "a147fead-db74-47f7-a78e-2e26ba224894"
+      },
+      "source": [
+        "c=a-b\n",
+        "print(c)"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[-3 -3 -3]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "Hy4dXLS_IG_c"
+      },
+      "source": [
+        "Eleve cada componente del vector “a” al cuadrado y muestre el resultado "
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "niWh1h4SIG_e",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "cd3c5aca-0b3e-4fbf-a322-d59517f41d6d"
+      },
+      "source": [
+        "cuadrado= a**2\n",
+        "print(cuadrado)"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[1 4 9]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "lchN26DdIHfB"
+      },
+      "source": [
+        "Calcule la función coseno de todos los componentes del vector “a” y muestre el resultado"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "sJJrWspzIHfC",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "c4492f57-3dad-41b9-e995-db87d85fa38b"
+      },
+      "source": [
+        "coseno2=np.cos(a)\n",
+        "print(coseno2)"
+      ],
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[ 0.54030231 -0.41614684 -0.9899925 ]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "colab_type": "text",
+        "id": "OEJRW11JIHfG"
+      },
+      "source": [
+        "Multiplique los vectores “a” y ”b” y muestre el resultado"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab_type": "code",
+        "id": "DNoi8dGEIHfH",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "c9599729-2532-42f1-c707-1f3055085599"
+      },
+      "source": [
+        "mul=np.multiply(a,b)\n",
+        "print(mul)"
+      ],
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[ 4 10 18]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
